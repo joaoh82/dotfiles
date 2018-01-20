@@ -1,0 +1,26 @@
+# copy to ~/
+[core]
+	excludesfile = /Users/joaoh82/.gitignore_global
+	editor = vim
+[credential]
+	helper = cache --timeout=86400
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = João Henrique Machado Silva
+	email = joaoh82@gmail.com
+[commit]
+	template = /Users/joaoh82/.stCommitMsg
+[url "git@github.com:housinganywhere"]
+	insteadOf = https://github.com/housinganywhere
+[alias]
+    up = pull --rebase
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short

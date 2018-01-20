@@ -1,0 +1,5 @@
+"My Personal Vim config
+let g:snips_author = "Joao Henrique Machado Silva"
+
+let g:racer_cmd = "/Users/joaoh82/.cargo/bin/racer"
+
