@@ -1,3 +1,4 @@
+"copy to ~/
 "My Personal Vim config
 let g:snips_author = "Joao Henrique Machado Silva"
 
